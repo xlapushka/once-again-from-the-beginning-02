@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>xlopa's BarberShop</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <!-- <link rel="preconnect" href="">  -->
+    <!-- прикнектити шрифти -->
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -19,27 +22,31 @@
             height="56"
           />
         </a>
-        <ul class="list">
+        <ul class="list nav-menu">
           <li>
-            <a href="" class="nav-accent link"> About </a>
+            <a href="#about" class="nav-accent link"> About </a>
           </li>
           <li>
-            <a href="" class="nav-accent link"> Services and prices </a>
+            <a href="#services-and-prices" class="nav-accent link">
+              Services and prices
+            </a>
           </li>
           <li>
-            <a href="" class="nav-accent link"> Barbers </a>
+            <a href="#barbers" class="nav-accent link"> Barbers </a>
           </li>
           <li>
-            <a href="" class="nav-accent link"> Contacts </a>
+            <a href="#contacts" class="nav-accent link"> Contacts </a>
           </li>
         </ul>
 
         <ul class="list">
           <li>
-            <a href="tel:" class="nav-accent link">+38 044 111 11 11</a>
+            <a href="tel:" class="nav-accent link nav-menu"
+              >+38 044 111 11 11</a
+            >
           </li>
           <li>
-            <button type="button" class="nav-button link">
+            <button type="button" class="nav-button link btn">
               Online-booking
             </button>
           </li>
@@ -71,7 +78,7 @@
         </ul>
         <div class="h-reverse">
           <h1>BarberShop</h1>
-          <h2>A hair salon for men in Kyiv</h2>
+          <h2 class="subtitle">A hair salon for men in Kyiv</h2>
         </div>
         <h3>
           We are experts in trendy men’s haircuts.<br />
@@ -79,7 +86,7 @@
         </h3>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div>
           <img
             src="./img/about-1.jpg"
@@ -94,7 +101,7 @@
         </div>
         <div>
           <div class="h-no-reverse">
-            <h2>About</h2>
+            <h2 class="subtitle">About</h2>
             <h3>Best Barbershop in your city</h3>
           </div>
           <h4>
@@ -108,14 +115,14 @@
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <button class="button">ONLINE-BOOKING</button>
+          <button class="button bth-text">ONLINE-BOOKING</button>
         </div>
       </section>
 
-      <section class="services-and-prices">
+      <section class="services-and-prices" id="services-and-prices">
         <div class="h-reverse">
           <h2>Services and prices</h2>
-          <h3>Spend your time with the best masters</h3>
+          <h3 class="subtitle">Spend your time with the best masters</h3>
         </div>
 
         <div>
@@ -157,7 +164,7 @@
             </li>
           </ul>
         </div>
-        <button class="button">ONLINE-BOOKING</button>
+        <button class="button btn">ONLINE-BOOKING</button>
       </section>
 
       <section class="advantages">
@@ -180,7 +187,7 @@
           </li>
         </ul>
         <div class="h-reverse">
-          <h2>Old traditional school</h2>
+          <h2 class="subtitle">Old traditional school</h2>
           <h3>&iquest;Why people come to us?</h3>
         </div>
         <h4>
@@ -189,10 +196,10 @@
         </h4>
       </section>
 
-      <section class="our-barbers">
+      <section class="our-barbers" id="barbers">
         <div class="h-reverse">
           <h2>Our barbers</h2>
-          <h3>For true enjoyers of the atmosphere</h3>
+          <h3 class="subtitle">For true enjoyers of the atmosphere</h3>
         </div>
 
         <ul>
@@ -340,8 +347,9 @@
         </ul>
       </section>
 
-      <section class="photoes">
-        <h2>In Latin, "barba" means "beard"</h2>
+      <section class="photos">
+        <h2 class="visually-hidden">Photos</h2>
+        <h3 class="subtitle">In Latin, "barba" means "beard"</h3>
         <div>
           <img
             src="./img/Rectangle-25.jpg"
@@ -366,16 +374,16 @@
         </div>
       </section>
 
-      <section>
+      <section id="contacts">
         <div>
           <h2>Online-booking</h2>
         </div>
-        <div>
+        <div class="contacts">
           <h2>Contacts</h2>
           <address>
             <ul class="list">
               <li>
-                <a class="link" href="">
+                <a class="link city-street" href="">
                   <img
                     src="./img/address_map-pin.svg"
                     alt="mail pin"
@@ -397,8 +405,8 @@
               </li>
             </ul>
           </address>
-          <div>
-            <h3>Working hours</h3>
+          <div class="working-hours">
+            <h3 class="subtitle">Working hours</h3>
             <p>Every day from 9:00 to 22:00</p>
           </div>
         </div>
